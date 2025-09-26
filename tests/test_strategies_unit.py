@@ -15,6 +15,8 @@ def test_no_discount():
     total = NoDiscount().apply(subtotal, items)
     assert total == 35.00
 
+#comment test
+#2nd test
 
 @pytest.mark.parametrize("percent, expected", [(10, 31.5), (0, 35.0), (100, 0.0)])
 def test_percentage_discount(percent, expected):
